@@ -1,3 +1,86 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: "Bacon";
+    src: local("Bacon"),
+        url("./fonts/bacon.otf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "HB";
+    src: local("HB"),
+        url("./fonts/HB.otf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Barking";
+    src: local("Barking"),
+        url("./fonts/Barking.otf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "GelPen";
+    src: local("GelPen"),
+        url("./fonts/GelPen.ttf") format("truetype");
+    font-weight: bold;
+}
+
+
+/* DEV FONTS  */
+@font-face {
+    font-family: "Anti";
+    src: local("Anti"),
+        url("./fonts/devfonts/Anti.ttf") format("truetype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Fear";
+    src: local("Fear"),
+        url("./fonts/devfonts/fear.ttf") format("truetype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Logo";
+    src: local("Logo"),
+        url("./fonts/devfonts/logo.ttf") format("truetype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Ray";
+    src: local("Ray"),
+        url("./fonts/devfonts/ray.otf") format("truetype");
+    font-weight: bold;
+}
+
+
+@layer base {
+    h2 {
+        @apply text-5xl font-[HB] mb-4
+        dark:font-[Logo]
+    }
+
+    h3 {
+        @apply text-3xl font-[Barking] mb-4
+        dark:font-[Fear] dark:text-3xl
+    }
+    h4 {
+        @apply text-3xl font-[Barking] mb-4
+    }
+    h5 {
+        @apply text-2xl font-[TTP] mb-4
+        dark:font-[Anti] dark:text-3xl
+    }
+
+
+
+    .btn-cartoon {
+        @apply px-5 border-black border-b-2 font-[Barking] text-4xl
+        dark:font-[Logo]
+    }
+}
