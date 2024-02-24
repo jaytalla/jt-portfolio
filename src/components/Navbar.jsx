@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react'
 
-const Navbar = () => {
-    const [theme, setTheme] = useState("light");
+const Navbar = ({theme, setTheme}) => {
+    // const [theme, setTheme] = useState("light");
     const SwitchMode = () => {
-        setTheme(theme === "dark" ? "light" : "dark");
+        const newMode = theme === "dark" ? "light" : "dark"; 
+        setTheme(newMode);
+        localStorage.setItem("mode", newMode);
     }
 
     useEffect(() => {
@@ -12,14 +14,15 @@ const Navbar = () => {
         } else {
             document.documentElement.classList.remove("dark");
         }
+        
         // alert("working ba?");
     }, [theme])
 
   return (
-    <div className='fixed flex justify-center items-center w-full h-[70px] bg-slate-50 dark:bg-slate-950'>
+    <div className='fixed flex justify-center items-center w-full h-[70px] bg-slate-50 dark:bg-slate-950 z-10'>
         <div className='flex justify-between w-full items-center max-w-[1200px] px-10'>
             <div className='text-2xl text-jt-txt-dark dark:text-jt-txt-neon-green'>
-                <a onClick={SwitchMode}><p>JTPortfolio</p></a>
+                <a onClick={SwitchMode}><p><h2 className='text-2xl m-0'>JTPortfolio</h2></p></a>
             </div>
             <ul className='flex text-jt-txt-dark dark:text-jt-txt-neon-green'>
                 <li className='p-4'>Home</li>

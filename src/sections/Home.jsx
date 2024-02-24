@@ -1,7 +1,7 @@
 import React from 'react'
 import HomeImage from '../assets/imgs/profile.jpg'
 import TypewriterComponent from 'typewriter-effect'
-const Home = () => {
+const Home = ({theme}) => {
   return (
     <section className='grid grid-cols-2 w-full h-screen bg-slate-200 
     dark:bg-slate-900'>
@@ -10,10 +10,16 @@ const Home = () => {
         </div>
         <div className='dark:bg-jt-dark-primary-dark bg-jt-primary-light flex flex-col justify-center items-start px-10'>
             <h2 className='dark:text-jt-txt-neon-green text-jt-txt-dark'>
-                <TypewriterComponent options={{strings: ["Hi! I'm Jay Talla"], autoStart: true, loop: true, cursor: '|', deleteSpeed: 2}} />
+                {
+                    theme == "dark" ? <TypewriterComponent options={{strings: ["Hi! I'm Jay Talla"], autoStart: true, loop: true, cursor: '|', deleteSpeed: 2}} />
+                    : "Hi! I'm Jay Talla"
+                }
             </h2>
             <h3 className='dark:text-jt-txt-neon-green text-jt-txt-dark text-6xl'>
-                <TypewriterComponent options={{strings: ["ANIMATOR / WEBDEV"], delay: 200,  autoStart: true, loop: true, cursor: '|'}} />
+                {
+                    theme == "dark" ? <TypewriterComponent options={{strings: ["ANIMATOR / WEBDEV"], delay: 200,  autoStart: true, loop: true, cursor: '|'}} />
+                    : "ANIMATOR / WEBDEV" 
+                }
             </h3>
             <h5 className='dark:text-jt-txt-white text-jt-txt-dark'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br></br>Sed do eiusmod tempor incididunt ut labore.</h5>
             <button className='dark:text-jt-txt-neon-green dark:border-b-jt-txt-neon-green btn-cartoon'>HIRE ME!</button>

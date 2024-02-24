@@ -62,25 +62,30 @@
 @layer base {
     h2 {
         @apply text-5xl font-[HB] mb-4
-        dark:font-[Logo]
+        dark:font-[Logo] dark:text-jt-txt-neon-green
     }
 
     h3 {
         @apply text-3xl font-[Barking] mb-4
-        dark:font-[Fear] dark:text-3xl
+        dark:font-[Fear] dark:text-3xl dark:text-jt-txt-neon-green
     }
     h4 {
-        @apply text-3xl font-[Barking] mb-4
+        @apply text-lg font-[HB] mb-4
+        dark:font-[Logo] dark:text-lg dark:text-jt-txt-neon-green
     }
     h5 {
-        @apply text-2xl font-[TTP] mb-4
-        dark:font-[Anti] dark:text-3xl
+        @apply text-xl font-[TTP] mb-4
+        dark:font-[Anti] dark:text-xl dark:text-jt-txt-white
     }
 
-
+    p {
+        @apply text-lg font-[TTP] mb-4
+        dark:font-[Anti] dark:text-lg dark:text-jt-txt-white
+    }
 
     .btn-cartoon {
         @apply px-5 border-black border-b-2 font-[Barking] text-4xl
-        dark:font-[Logo]
+        hover:bg-jt-dark-primary-dark hover:text-jt-txt-white
+        dark:font-[Fear] dark:hover:bg-jt-txt-neon-green dark:hover:text-jt-txt-dark
     }
 }
