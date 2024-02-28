@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jt-portfolio/static/css/main.d12acdfd.css",
-    "main.js": "/jt-portfolio/static/js/main.2cdab199.js",
+    "main.css": "/jt-portfolio/static/css/main.ac8ac762.css",
+    "main.js": "/jt-portfolio/static/js/main.3e2c84de.js",
     "static/media/HB.otf": "/jt-portfolio/static/media/HB.541a610964468db03d66.otf",
     "static/media/Anti.ttf": "/jt-portfolio/static/media/Anti.0a72e4c8a728fb65c4c0.ttf",
     "static/media/Barking.otf": "/jt-portfolio/static/media/Barking.5b9d500fa6d9e624ebbd.otf",
@@ -26,11 +26,11 @@
     "static/media/fear.ttf": "/jt-portfolio/static/media/fear.df2d8b0b8e6944c7ae29.ttf",
     "static/media/ray.otf": "/jt-portfolio/static/media/ray.f4056e640d76c6bf4462.otf",
     "index.html": "/jt-portfolio/index.html",
-    "main.d12acdfd.css.map": "/jt-portfolio/static/css/main.d12acdfd.css.map",
-    "main.2cdab199.js.map": "/jt-portfolio/static/js/main.2cdab199.js.map"
+    "main.ac8ac762.css.map": "/jt-portfolio/static/css/main.ac8ac762.css.map",
+    "main.3e2c84de.js.map": "/jt-portfolio/static/js/main.3e2c84de.js.map"
   },
   "entrypoints": [
-    "static/css/main.d12acdfd.css",
-    "static/js/main.2cdab199.js"
+    "static/css/main.ac8ac762.css",
+    "static/js/main.3e2c84de.js"
   ]
 }
