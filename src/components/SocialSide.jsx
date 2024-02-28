@@ -21,7 +21,8 @@ const SocialIcon = ({icon, link, title}) => {
 
 const SocialSide = () => {
   return (
-    <div className='z-10 fixed flex-col flex justify-center items-center left-0 top-[40%] w-[50px] h-[200px] dark:bg-slate-950 bg-slate-100 shadow-sm shadow-gray-400 dark:shadow-jt-dark-primary-dark'>
+    <div className='z-10 fixed flex-col md:flex justify-center items-center left-0 top-[40%] w-[50px] h-[200px] dark:bg-slate-950 bg-slate-100 shadow-sm shadow-gray-400 dark:shadow-jt-dark-primary-dark
+                    hidden md:block'>
         <SocialIcon icon={<FaGithubSquare className='text-4xl mb-2 cursor-pointer dark:hover:text-jt-txt-neon-green dark:text-white hover:text-purple-500' title='Go to my GitHub'/>} 
           link={"https://github.com/jaytalla"} title={"Visit my GitHub page."}
         />

@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import SocialSide from './components/SocialSide';
 import About from './sections/About';
 import Home from './sections/Home';
+import AnimatedMe from './components/AnimatedMe';
 
 function App() {
 
@@ -12,9 +13,10 @@ function App() {
   return (
     <>
       <SocialSide />
+      {/* <AnimatedMe /> */}
       <Navbar theme={theme} setTheme={setTheme}/>
       <Home theme={theme}/>
-      <About />
+      <About theme={theme}/>
     </>
   );
 }
