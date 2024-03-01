@@ -82,7 +82,9 @@
     }
 
     p {
-        @apply text-lg font-[TTP] mb-4
+        @apply 
+        
+        md:text-base font-[TTP] mb-4
         dark:font-[Anti] dark:text-lg dark:text-jt-txt-white
     }
 

@@ -34,11 +34,12 @@ const About = ({theme}) => {
     <div className='h-fit py-24
                     flex flex-col justify-center items-center w-full md:h-screen bg-jt-grey
                     dark:bg-jt-dark-primary-neutral'>
-        <h2 className='pb-0 m-0 mb-2 md:mb-0'>About</h2>
-        <div className='flex flex-col md:flex-row items-center px-14 w-full h-full'>
+        <h2 className='pb-0 m-0 mb-2'>About</h2>
+        <div className='px-10
+                        flex flex-col md:flex-row items-center md:px-16 w-full h-full'>
             {/* SMALL PROFILE CARD  */}
-            <div className='w-[100%] flex flex-row mb-5 text-left justify-center
-                            md:w-[20%] h-[80%] md:flex-col items-center md:text-center md:mb-0 bg-jt-primary-light p-5 md:mr-2
+            <div className='w-[100%] h-fit flex flex-row mb-5 text-left justify-center
+                            md:w-[20%] md:h-full md:flex-col items-center md:text-center md:mb-0 bg-jt-primary-light p-5 md:mr-2
                             dark:bg-jt-dark-primary-dark'>
                 <img className='glitch w-[50%] md:w-[100%]
                                 grayscale
@@ -52,8 +53,8 @@ const About = ({theme}) => {
                     <h5 className='m-0'>Animation, Illustration and Game Development</h5>
                 </div>
             </div>
-            <div className='w-[100%] flex flex-row text-left justify-center
-                            md:w-[80%] h-fit bg-jt-primary-light p-5
+            <div className='w-[100%] h-fit flex flex-row text-left justify-center
+                            md:w-[80%] md:h-full bg-jt-primary-light p-5
                             dark:bg-jt-dark-primary-dark'>
                 <div className='w-full h-[30%] '>
                     <h3>About</h3>

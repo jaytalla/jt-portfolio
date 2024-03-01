@@ -12,7 +12,8 @@ export const ProgressBar = (val) => {
 export const CardWithIcon = () => {
     {/* CARD  */}
     return (
-        <div className='w-fit flex flex-col p-5 justify-center items-center h-full '>
+        <div className='mb-5
+                        w-fit flex flex-col md:mb-0 justify-center items-start h-full '>
             <img className='w-[80%]  mb-2 ' src={ReactIcon} alt="" />
             {/* PROGRESS BAR  */}
             <ProgressBar/>

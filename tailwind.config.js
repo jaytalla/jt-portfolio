@@ -4,7 +4,11 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      screens: {
+
+      },
       colors: {
+        //#region "Portfolio"
         // LIGHT MODE 
         'jt-primary-light': '#F2EFE5',
         'jt-primary-white': '#F0F3FF',
@@ -25,6 +29,8 @@ module.exports = {
         // TEXTS
         'jt-txt-dark': '#211951',
         'jt-txt-white': '#ffffff',
+        //#endregion
+      
         
       }
 
