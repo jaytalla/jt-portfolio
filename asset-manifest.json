@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jt-portfolio/static/css/main.b92737b9.css",
-    "main.js": "/jt-portfolio/static/js/main.3e2c84de.js",
+    "main.css": "/jt-portfolio/static/css/main.026565e4.css",
+    "main.js": "/jt-portfolio/static/js/main.ad28255f.js",
     "static/media/HB.otf": "/jt-portfolio/static/media/HB.541a610964468db03d66.otf",
     "static/media/Anti.ttf": "/jt-portfolio/static/media/Anti.0a72e4c8a728fb65c4c0.ttf",
     "static/media/Barking.otf": "/jt-portfolio/static/media/Barking.5b9d500fa6d9e624ebbd.otf",
@@ -21,16 +21,17 @@
     "static/media/TTP.ttf": "/jt-portfolio/static/media/TTP.753ddee2751ff07ef88c.ttf",
     "static/media/test4.png": "/jt-portfolio/static/media/test4.85c1855d44b68a9c9975.png",
     "static/media/test3.png": "/jt-portfolio/static/media/test3.9d2ef92c19f80b0b2e9a.png",
+    "static/media/proj_kyrie.png": "/jt-portfolio/static/media/proj_kyrie.050cc0cba06f8f781b7f.png",
     "static/media/logo.ttf": "/jt-portfolio/static/media/logo.199c827a6ee5e60940d8.ttf",
     "static/media/GelPen.ttf": "/jt-portfolio/static/media/GelPen.06251836cbcc359f061d.ttf",
     "static/media/fear.ttf": "/jt-portfolio/static/media/fear.df2d8b0b8e6944c7ae29.ttf",
     "static/media/ray.otf": "/jt-portfolio/static/media/ray.f4056e640d76c6bf4462.otf",
     "index.html": "/jt-portfolio/index.html",
-    "main.b92737b9.css.map": "/jt-portfolio/static/css/main.b92737b9.css.map",
-    "main.3e2c84de.js.map": "/jt-portfolio/static/js/main.3e2c84de.js.map"
+    "main.026565e4.css.map": "/jt-portfolio/static/css/main.026565e4.css.map",
+    "main.ad28255f.js.map": "/jt-portfolio/static/js/main.ad28255f.js.map"
   },
   "entrypoints": [
-    "static/css/main.b92737b9.css",
-    "static/js/main.3e2c84de.js"
+    "static/css/main.026565e4.css",
+    "static/js/main.ad28255f.js"
   ]
 }
