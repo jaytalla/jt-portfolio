@@ -6,7 +6,14 @@
 @font-face {
     font-family: "OCR";
     src: local("OCR"),
-        url("./fonts/OCR.otf") format("truetype");
+        url("projects/KyrieAnta/fonts/OCR.otf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "IMPACT";
+    src: local("IMPACT"),
+        url("projects/KyrieAnta/fonts/impact.ttf") format("truetype");
     font-weight: bold;
 }
 
@@ -17,7 +24,7 @@
 
 
     h1 {
-        @apply text-5xl font-[Impact]
+        @apply text-5xl font-[IMPACT]
     }
 
 
@@ -35,6 +42,10 @@
         text-shadow: -1px 1px 0 #000,
                 1px 1px 0 #000,
                 1px -1px 0 #000,
-                -1px -1px 0 #000;
+                -1px -1px 0 #000;   
     }
+
+    .textborder-orange {
+        -webkit-text-stroke: 2px #E68662!important; /* width and color */
+    }   
 }
