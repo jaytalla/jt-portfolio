@@ -31,7 +31,18 @@ module.exports = {
         'jt-txt-white': '#ffffff',
         //#endregion
       
-        
+        //#region "KyriexAnta Colors"
+        'kyrie-white': "#FFFFFF",
+        'kyrie-orange': "#E68662",
+        'kyrie-bglight-orange': "#F9F7F2",
+        'kyrie-bglight-blue': "#F2F3F9",
+        'kyrie-grey': "#707070",
+        'kyrie-dark-orange': "#E68662",
+        'kyrie-dark': "#231E20",
+        'kyrie-purple': "#4D5BDA",
+        'kyrie-dark-purple': "#242891",
+        'kyrie-brown': "#442418",
+        //#endregion
       }
 
     },

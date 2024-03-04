@@ -6,6 +6,7 @@ import About from './sections/About';
 import Home from './sections/Home';
 import AnimatedMe from './components/AnimatedMe';
 import Projects from './sections/Projects';
+import HomeKyrie from './projects/KyrieAnta/HomeKyrie';
 
 function App() {
 
@@ -13,12 +14,13 @@ function App() {
 
   return (
     <>
-      <SocialSide />
+      {/* <SocialSide /> */}
       {/* <AnimatedMe /> */}
-      <Navbar theme={theme} setTheme={setTheme}/>
+      {/* <Navbar theme={theme} setTheme={setTheme}/>
       <Home theme={theme}/>
       <About theme={theme}/>
-      <Projects theme={theme}/>
+      <Projects theme={theme}/> */}
+      <HomeKyrie />
     </>
   );
 }

@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: "OCR";
+    src: local("OCR"),
+        url("./fonts/OCR.otf") format("truetype");
+    font-weight: bold;
+}
+
+
+@layer base {
+
+    
+
+
+    h1 {
+        @apply text-5xl font-[Impact]
+    }
+
+
+    .shadowcut {
+        box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.23) inset!important;
+        -webkit-box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.23) inset!important;
+        -moz-box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.23) inset!important;
+    }
+
+    .cliphalf {
+        clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%)!important;
+    }
+
+    .textborder {
+        text-shadow: -1px 1px 0 #000,
+                1px 1px 0 #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+    }
+}
