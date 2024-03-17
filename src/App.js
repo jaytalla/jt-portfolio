@@ -13,7 +13,7 @@ function App() {
   const [theme, setTheme] = useState(() => localStorage.getItem("mode") || "light");
 
   return (
-    <>
+    <div className=''>
       {/* <SocialSide /> */}
       {/* <AnimatedMe /> */}
       {/* <Navbar theme={theme} setTheme={setTheme}/>
@@ -21,7 +21,7 @@ function App() {
       <About theme={theme}/>
       <Projects theme={theme}/> */}
       <HomeKyrie />
-    </>
+    </div>
   );
 }
 
