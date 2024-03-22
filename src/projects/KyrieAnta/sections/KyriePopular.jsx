@@ -12,6 +12,7 @@ const ShoeCard = ({title, img, desc, price}) => {
                     bg-kyrie-white hover:bg-kyrie-dark duration-500 ease-out rounded-md shadow-lg md:min-w-[200px] h-[250px] cursor-pointer'>
       <img src={img} alt="" className='absolute w-[13vw]
                                       min-w-[150px] -mt-[1vw]
+                                      xl:max-w-[200px] 
                                       sm:min-w-[200px] rotate-[-20deg] md:-mt-[2vw] group-hover:rotate-[-25deg] duration-500 group-hover:-mt-[4vw] '/>
       <h3 className='pt-32 group-hover:text-kyrie-white duration-500'>{title}</h3>
       <h4 className='group-hover:text-kyrie-white duration-500'>{desc}</h4>
@@ -22,7 +23,7 @@ const ShoeCard = ({title, img, desc, price}) => {
 
 const KyriePopular = () => {
   return (
-    <div className='overflow-x-clip  w-full 
+    <section id='popular' className='overflow-x-clip  w-full 
                     h-fit
                   bg-black'>
         {/* ROW DESIGN  */}
@@ -43,11 +44,12 @@ const KyriePopular = () => {
             <h2 className='z-[1]'>FEATURED</h2>
             <h3 className='z-[1]'>PRODUCTS</h3>
             {/* ITEMS  */}
-            <div className='z-[1] grid
-                            grid-cols-1 gap-y-14 
-                            sm:grid-cols-2 sm:gap-y-16
+            <div className='z-[1] mt-10 grid max-w-[1500px]
+                            grid-cols-1 gap-y-[10vw]
+                            sm:grid-cols-2 
                             md:grid-cols-3 
-                            lg:grid-cols-4 gap-x-5 w-full h-full md:p-10'>
+                            lg:grid-cols-4 gap-x-5 w-full h-fit md:p-10
+                            xl:mt-10'>
                 
                 {/* SHOE CARD  */}
                 <ShoeCard img={kyrieShoeOne} desc={"SHOCK WAVE 5 PRO"} title={"KYRIE IRVING X ANTA"} price={"Php 15,500"}/>
@@ -57,7 +59,7 @@ const KyriePopular = () => {
                 
             </div>
         </section>
-    </div>
+    </section>
   )
 }
 

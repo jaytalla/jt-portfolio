@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { IoMenu } from "react-icons/io5";
 import {motion} from 'framer-motion'
+import {Link} from 'react-scroll'
 
 const Navbar = () => {
   const [getSidebar, setSidebar] = useState(false);
@@ -9,8 +10,12 @@ const Navbar = () => {
       {/* LEFT PART  */}
       <div className='hidden md:block mt-5 w-[13%] h-[50px] min-w-[200px]'>
         <ul className='flex justify-start mt-5 items-end space-x-10 font-[OCR] font-thin opacity-80 tracking-widest'>
-          <li>Home</li>
-          <li>Popular</li>
+          <Link to='home' spy={true} smooth={true}>
+            <li className='cursor-pointer'>Home</li>
+          </Link>
+          <Link to='popular' spy={true} smooth={true}>
+            <li className='cursor-pointer'>Popular</li>
+          </Link>
         </ul>
       </div>
       {/* MID CUT  */}
@@ -22,8 +27,12 @@ const Navbar = () => {
       {/* <h1 className=''>Sample Text</h1> */}
       <div className='hidden md:block mt-5 w-[15%] h-[50px] min-w-[235px]'>
         <ul className='flex justify-end mt-5 items-end space-x-10 font-[OCR] font-thin opacity-80 tracking-widest'>
-          <li>Products</li>
-          <li>Contact</li>
+        <Link to='products' spy={true} smooth={true}>
+            <li className='cursor-pointer'>Products</li>
+          </Link>
+          <Link to='contact' spy={true} smooth={true}>
+            <li className='cursor-pointer'>Contact</li>
+          </Link>
         </ul>
       </div>
       
@@ -37,10 +46,19 @@ const Navbar = () => {
                       absolute md:hidden'>
             <div className='mt-5 w-[13%] h-fit min-w-[200px]'>
               <ul className='flex flex-col justify-start mt-5 items-start space-y-2 font-[OCR] font-thin opacity-80 tracking-widest'>
-                <motion.li initial={{y:0, opacity:0}} animate={{y: [-10, 0], opacity:[0, 100] }} transition={{duration: .2,  delay: .1, ease: 'easeInOut'}} className='w-full px-2 py-2 hover:bg-kyrie-orange cursor-pointer hover:text-kyrie-white hover:font-extrabold duration-200 ease-in'>Home</motion.li>
+                <Link to='home' spy={true} smooth={true}>
+                  <motion.li initial={{y:0, opacity:0}} animate={{y: [-10, 0], opacity:[0, 100] }} transition={{duration: .2,  delay: .1, ease: 'easeInOut'}} className='w-full px-2 py-2 hover:bg-kyrie-orange cursor-pointer hover:text-kyrie-white hover:font-extrabold duration-200 ease-in'>Home</motion.li>
+                </Link>
+                <Link to='popular' spy={true} smooth={true}>
                 <motion.li initial={{y:0, opacity:0}} animate={{y: [-10, 0], opacity:[0, 100] }} transition={{duration: .2,  delay: .2, ease: 'easeInOut'}} className='w-full px-2 py-2 hover:bg-kyrie-orange cursor-pointer hover:text-kyrie-white hover:font-extrabold duration-200 ease-in'>Popular</motion.li>
+                </Link>
+                <Link to='products' spy={true} smooth={true}>
                 <motion.li initial={{y:0, opacity:0}} animate={{y: [-10, 0], opacity:[0, 100] }} transition={{duration: .2,  delay: .3, ease: 'easeInOut'}} className='w-full px-2 py-2 hover:bg-kyrie-orange cursor-pointer hover:text-kyrie-white hover:font-extrabold duration-200 ease-in'>Products</motion.li>
+                </Link>
+                <Link to='contact' spy={true} smooth={true}>
                 <motion.li initial={{y:0, opacity:0}} animate={{y: [-10, 0], opacity:[0, 100] }} transition={{duration: .2,  delay: .4, ease: 'easeInOut'}} className='w-full px-2 py-2 hover:bg-kyrie-orange cursor-pointer hover:text-kyrie-white hover:font-extrabold duration-200 ease-in'>Contact</motion.li>
+                </Link>
+
               </ul>
             </div>
           </motion.div>

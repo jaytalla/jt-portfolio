@@ -5,6 +5,7 @@ import KyrieStyle from '../../KyrieStyle.css'
 import KyriePopular from './sections/KyriePopular'
 import KyrieProducts from './sections/KyrieProducts'
 import KyrieContact from './sections/KyrieContact'
+import KyrieFooter from './sections/KyrieFooter'
 
 const HomeKyrie = () => {
   return (
@@ -14,6 +15,7 @@ const HomeKyrie = () => {
         <KyriePopular />
         <KyrieProducts />
         <KyrieContact />
+        <KyrieFooter />
     </div>
   )
 }

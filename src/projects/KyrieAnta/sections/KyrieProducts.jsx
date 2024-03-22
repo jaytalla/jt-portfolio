@@ -8,42 +8,43 @@ import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
 const KyrieProducts = () => {
     const [currentImage, setCurrentImage] = useState(kyrieOne);
     const props = { width: 300, zoomWidth: 500, img: currentImage};
-
     const ShoeCard = ({title, img, desc, price}) => {
         return(
-            <div className='group flex flex-col justify-start items-center 
-                            min-w-[250px]
-                            bg-kyrie-white hover:bg-kyrie-dark duration-500 ease-out rounded-md shadow-lg md:min-w-[200px] h-[250px] cursor-pointer'>
+          <div className='group flex flex-col justify-start items-center 
+                          min-w-[250px]
+                          bg-kyrie-white hover:bg-kyrie-dark duration-500 ease-out rounded-md shadow-lg md:min-w-[200px] h-[250px] cursor-pointer'>
             <img src={img} alt="" className='absolute w-[13vw]
                                             min-w-[150px] -mt-[1vw]
+                                            xl:max-w-[200px] 
                                             sm:min-w-[200px] rotate-[-20deg] md:-mt-[2vw] group-hover:rotate-[-25deg] duration-500 group-hover:-mt-[4vw] '/>
-            <h4 className='pt-32 group-hover:text-kyrie-white duration-500 text-center'>{title}</h4>
-            <h4 className='group-hover:text-kyrie-white duration-500'>{desc}</h4>
+            <h3 className='pt-32 group-hover:text-kyrie-white duration-500'>{title}</h3>
+            <h4 className='group-hover:text-kyrie-white duration-500 text-center' >{desc}</h4>
             <button className='mt-5 kyrie-btn group-hover:bg-kyrie-white group-hover:text-kyrie-dark'>{price}</button>
-            </div>
+          </div>
         )
-    }
+      }
     
     return (
-    <div className='grid grid-rows-2 md:grid-rows-1 md:grid-cols-2  w-full h-screen bg-kyrie-white p-10 md:p-20'>
+    <section id='products' className='flex flex-col w-full h-fit items-center bg-kyrie-white p-10 md:p-20'>
         {/* PRODUCT VIEW  */}
-        <div className='flex flex-col bg-red-200 p-10'>
+        <div className='flex flex-col p-10'>
             {/* IMAGE CONTAINER HERE */}
-            <div className='flex justify-center bg-kyrie-white w-full h-full'>
+            <div className='flex justify-center bg-kyrie-white w-full h-fit'>
                 {/* <img src={currentImage} alt="" /> */}
-                <InnerImageZoom src={currentImage} zoomSrc={currentImage} zoomScale={1.2} zoomType='click' moveType='drag' />
+                <InnerImageZoom className='w-[80%]' src={currentImage} zoomSrc={currentImage} zoomScale={1.2} zoomType='click' moveType='drag' />
             </div>
             {/* SOME IMAGES  */}
             <div className='bg-black w-full'>
-
+                
             </div>
         </div>
 
         {/* OTHER PRODUCS HERE AND SOME OPTIONS  */}
-        <div className=''>
-            <div className='z-[1] grid
-                            grid-cols-1 gap-y-14 h-screen
-                            lg:grid-cols-2 gap-x-5 w-full lg:h-full md:p-10'>
+        <div className='h-fit'>
+            <div className='z-[1] grid h-fit
+
+                            sm:grid-cols-2 gap-y-[10vw] mt-10
+                            lg:grid-cols-4 gap-x-5 w-full lg:h-full md:p-10'>
                 
                 {/* SHOE CARD  */}
                 <ShoeCard img={kyrieOne} desc={"SHOCK WAVE 5 PRO"} title={"KYRIE IRVING X ANTA"} price={"Php 15,500"}/>
@@ -52,7 +53,7 @@ const KyrieProducts = () => {
                 <ShoeCard img={kyrieTwo} desc={"SHOCK WAVE 5 PRO"} title={"KYRIE IRVING X ANTA"} price={"Php 25,999"}/>
             </div>
         </div>
-    </div>
+    </section>
   )
 }
 

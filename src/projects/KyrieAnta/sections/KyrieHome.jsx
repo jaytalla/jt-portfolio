@@ -7,7 +7,8 @@ const KyrieHome = () => {
   
 
   return (
-    <div className='flex justify-center items-center w-full h-screen bg-kyrie-bglight-orange'>
+    <section id='home' className='flex justify-center items-center w-full h-screen bg-kyrie-bglight-
+                                  '>
         <p className='absolute opacity-20 -mt-20 font-[IMPACT] 
                       text-[18vw] left-[2vw]
                       sm:left-[5vw]
@@ -37,7 +38,7 @@ const KyrieHome = () => {
                   sm:left-[8vw]
                   md:text-[13vw] text-kyrie-orange md:left-[18vw]
                   min-w-[100px]'>Kyrie</motion.p>
-    </div>
+    </section>
   )
 }
 

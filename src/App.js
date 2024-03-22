@@ -14,13 +14,13 @@ function App() {
 
   return (
     <div className=''>
-      {/* <SocialSide /> */}
+      <SocialSide />
       {/* <AnimatedMe /> */}
-      {/* <Navbar theme={theme} setTheme={setTheme}/>
+      <Navbar theme={theme} setTheme={setTheme}/>
       <Home theme={theme}/>
       <About theme={theme}/>
-      <Projects theme={theme}/> */}
-      <HomeKyrie />
+      <Projects theme={theme}/>
+      {/* <HomeKyrie /> */}
     </div>
   );
 }
