@@ -56,8 +56,8 @@ const Home = ({theme}) => {
           
         </div>
         <div className='dark:bg-jt-dark-primary-dark bg-jt-primary-light flex flex-col justify-center md:items-start px-10
-                        text-center md:text-left items-center'>
-            <h2 className='dark:text-jt-txt-neon-green text-jt-txt-dark'>
+                        text-center md:text-left items-center space-y-5'>
+            <h2 className='dark:text-jt-txt-neon-green text-wrap text-jt-txt-dark'>
                 {
                     theme == "dark" ? <TypewriterComponent options={{strings: ["Hi! I'm Jay Talla"], autoStart: true, loop: true, cursor: '|', deleteSpeed: 2}} />
                     : "Hi! I'm Jay Talla"
@@ -69,7 +69,7 @@ const Home = ({theme}) => {
                     : "ANIMATOR / WEBDEV" 
                 }
             </h3>
-            <h5 className='dark:text-jt-txt-white text-jt-txt-dark'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br></br>Sed do eiusmod tempor incididunt ut labore.</h5>
+            <p className='dark:text-jt-txt-white text-jt-txt-dark'>A Web Developer specializing in crafting captivating online experiences. <br></br>Let's build something awesome for the web together!</p>
             <button className='glitchhover dark:text-jt-txt-neon-green dark:border-b-jt-txt-neon-green btn-cartoon'>HIRE ME!</button>
         </div>
     </section>

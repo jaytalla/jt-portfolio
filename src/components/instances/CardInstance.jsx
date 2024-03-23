@@ -1,22 +1,22 @@
 import ReactIcon from '../../assets/icons/react.png'
 
-export const ProgressBar = (val) => {
+export const ProgressBar = ({val, height}) => {
     return (
-        <div className="w-[80%] h-[10px] bg-black rounded-md">
-            <div style={{width: "20%"}} className="h-[10px] rounded-md bg-jt-txt-neon-green"></div>
+        <div style={{width: "100%", height:height}} className="w-[80%] h-[10px] bg-jt-dark-primary-light dark:bg-black rounded-md">
+            <div style={{width:val+"%", height:height}} className="h-[10px] rounded-md bg-jt-dark-primary-neutral dark:bg-jt-txt-neon-green"></div>
         </div>
     )
 }
 
 
-export const CardWithIcon = () => {
+export const CardWithIcon = ({imgname, percentage}) => {
     {/* CARD  */}
     return (
-        <div className='mb-5
+        <div className='mb-5 group
                         w-fit flex flex-col md:mb-0 justify-center items-start h-full '>
-            <img className='w-[80%]  mb-2 ' src={ReactIcon} alt="" />
+            <img className='w-[100px] h-[100px] group-hover:scale-110 duration-100 mb-5 ' src={imgname} alt="" />
             {/* PROGRESS BAR  */}
-            <ProgressBar/>
+            <ProgressBar val={percentage} height={"20px"}/>
         </div>
     )
 }
