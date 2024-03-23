@@ -4,6 +4,10 @@ import { PowerGlitch } from 'powerglitch'
 import Donut from '../assets/imgs/donut.png'
 import CRUD from '../assets/imgs/crud.png'
 import WEATHER from '../assets/imgs/weather.png'
+import ReactPlayer from 'react-player'
+
+// VIDEOS
+import POKEMON from '../assets/vids/pokemon.mp4'
 
 
 const projectList = [
@@ -34,6 +38,11 @@ const ProjectCard = ({title, img, desc, link}) => {
     )
 }
 
+
+
+
+
+
 const Projects = ({theme}) => {
     
   return (
@@ -49,8 +58,10 @@ const Projects = ({theme}) => {
             <div></div>
             {/* CARD CONTAINER  */}
             <div className='grid grid-cols-1 gap-y-5
+                            sm:grid-cols-2
                             md:dark:gap-y-10 
-                            md:grid-cols-4 gap-x-5 md:gap-y-16 w-full h-full '>
+                            md:grid-cols-3 gap-x-5 md:gap-y-16 w-full h-full 
+                            lg:grid-cols-4'>
                 {/* PROJECT CARD  */}
                 {/* <ProjectCard link={"https://jaytalla.site/iprojects/crud/index.html"} title={"Kyrie x Anta"}/>
                 <ProjectCard link={"https://jaytalla.site/iprojects/crud/index.html"} title={"Kyrie x Anta"}/>
@@ -65,9 +76,16 @@ const Projects = ({theme}) => {
                     return <ProjectCard link={project.link} title={project.name} desc={project.desc} img={project.img}/>
                   })
                 }
-
-                  <button className='col-span-4 btn-cartoon h-[100px]'>OTHER PROJECTS</button>
+                  {/* <ReactPlayer className='col-span-4' light={POKEMON} /> */}
+                  {/* <video autoPlay loop muted className="w-full h-full object-cover">
+                      <source src={POKEMON} type="video/mp4" />
+                      Your browser does not support the video tag.
+                  </video> */}
+                  
             </div>
+            <center>
+            <button className='col-span-4 btn-cartoon h-[100px]'>OTHER PROJECTS</button>
+            </center>
         </div>
     </section>
   )
