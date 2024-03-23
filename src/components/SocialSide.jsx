@@ -32,18 +32,6 @@ const SocialSide = () => {
         <SocialIcon icon={<FaLinkedin className='text-4xl dark:hover:text-jt-txt-neon-green dark:text-white mb-2 cursor-pointer hover:text-indigo-500' title='Go to my GitHub'/>} 
           link={"https://www.linkedin.com/in/talla-jay-ray-n-298b58293/"} title={"Visit my LinkedIn account."}
         />
-         {/* <SocialIcon icon={<TbBrandYoutubeFilled className='text-4xl  cursor-pointer  dark:hover:text-jt-txt-neon-green dark:text-white hover:text-red-500' title='Go to my GitHub'/>} 
-          link={"https://github.com/jaytalla"} title={"Visit my YouTube page."}
-        /> */}
-        {/* <a target='_blank' href="https://github.com/jaytalla"><FaGithubSquare className='text-4xl mb-2 cursor-pointer    dark:hover:text-jt-txt-neon-green dark:text-white hover:text-purple-500' title='Go to my GitHub'/> */}
-        {/* <span className='absolute top-5 left-20 w-52 p-2 h-fit bg-jt-primary-white pl-4 shadow-xl'>
-          <span className='absolute -left-5 top-0 w-0 h-0 
-          border-t-[0px] border-r-[25px] border-b-[20px] 
-          border-t-transparent border-jt-primary-white border-b-transparent'></span> 
-          Go to my GitHub page.</span></a>
-        <a target='_blank' href="https://www.linkedin.com/in/talla-jay-ray-n-298b58293/"><FaLinkedin className='text-4xl dark:hover:text-jt-txt-neon-green dark:text-white mb-2 cursor-pointer hover:text-indigo-500' title='Go to my GitHub'/></a>
-        <a target='_blank' href="https://github.com/jaytalla"><FaFacebookSquare className='text-4xl mb-2 cursor-pointer  dark:hover:text-jt-txt-neon-green dark:text-white hover:text-blue-600' title='Go to my GitHub'/></a>
-        <a target='_blank' href="https://github.com/jaytalla"><TbBrandYoutubeFilled className='text-4xl  cursor-pointer  dark:hover:text-jt-txt-neon-green dark:text-white hover:text-red-500' title='Go to my GitHub'/></a> */}
     </div>
   )
 }
