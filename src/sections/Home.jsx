@@ -44,7 +44,7 @@ const Home = ({theme}) => {
         <div className='md:flex justify-end items-center dark:bg-jt-dark-primary-dark bg-jt-primary-light md:px-10
                         hidden '>
             
-            <img draggable={true} src={HomeImage} alt="" 
+            <img draggable={true} src={HomeImage} alt="Jay Talla Portfolio Logo" 
             className={'relative left-[30%] glitch grayscale dark:grayscale-0 dark:border-jt-txt-neon-green border-jt-dark-primary-dark border-[10px] w-[50%]  rounded-2xl min-w-[320px]'}
                        /> 
             {/* {

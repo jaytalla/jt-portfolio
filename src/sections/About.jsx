@@ -125,7 +125,7 @@ const Skillcard = ({imgName, skillname, percentage, desc}) => {
   return (
     <div className='flex flex-col w-full h-fit duration-200 hover:bg-jt-primary-light dark:hover:bg-jt-dark-primary-neutral even:bg-jt-primary-dark even:bg-opacity-10 p-5'>
       <div className='flex w-full items-center'>
-        <img src={imgName != null ? imgName : CSHARP} alt="" className='w-[40px] h-[40px]
+        <img src={imgName != null ? imgName : HomeImage} alt={imgName} className='w-[40px] h-[40px]
                                                                         md:w-[80px] md:h-[80px] md:min-w-[80px]' />
         
         {/* PERCENTAGE */}
@@ -179,7 +179,7 @@ const About = ({theme}) => {
                             dark:bg-jt-dark-primary-dark'>
                 <img className='glitch w-[50%] md:w-[100%]
                                 grayscale
-                                dark:grayscale-0' src={HomeImage} alt=""  />
+                                dark:grayscale-0' src={HomeImage} alt="Jay Talla Portfolio Logo"  />
                 {/* BASIC INFO  */}
                 <div className='items-start ml-5
                                 flex flex-col md:ml-0 md:justify-center md:items-center'>
@@ -201,17 +201,11 @@ const About = ({theme}) => {
                     </p>
                     <h3 className='mt-5'>Skills</h3>
                     <div className='grid grid-cols-3 md:grid-cols-6 w-full h-fit mt-5'>
-                        {/* <CardWithIcon percentage={skillsList[0].percentage} />
-                        <CardWithIcon percentage={skillsList[1].percentage} />
-                        <CardWithIcon percentage={skillsList[2].percentage} />
-                        <CardWithIcon percentage={skillsList[3].percentage} />
-                        <CardWithIcon percentage={skillsList[4].percentage} />
-                        <CardWithIcon percentage={skillsList[5].percentage} /> */}
                         {skillsList.map((skill) => {
                           return <CardWithIcon imgname={skill.img} percentage={skill.percentage} />
                         })}
                     </div>
-                    <button onClick={HandlePopupSkill} className='glitchhover dark:text-jt-txt-neon-green dark:border-b-jt-txt-neon-green btn-cartoon mt-5'>VIEW ALL</button>
+                    <button onClick={HandlePopupSkill} className='glitchhover dark:text-jt-txt-neon-green dark:border-b-jt-txt-neon-green btn-cartoon mt-5 '>VIEW ALL</button>
                 </div>
             </div>
         </div>
