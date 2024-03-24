@@ -7,6 +7,7 @@ import Home from './sections/Home';
 import AnimatedMe from './components/AnimatedMe';
 import Projects from './sections/Projects';
 import HomeKyrie from './projects/KyrieAnta/HomeKyrie';
+import Contact from './sections/Contact';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <Home theme={theme}/>
       <About theme={theme}/>
       <Projects theme={theme}/>
+      <Contact />
       {/* <HomeKyrie /> */}
     </div>
   );

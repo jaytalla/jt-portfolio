@@ -153,7 +153,7 @@ const Skillcard = ({imgName, skillname, percentage, desc}) => {
 
 const About = ({theme}) => {
 
-    const [viewAllSkills, setViewAllSkills] = useState(true);
+    const [viewAllSkills, setViewAllSkills] = useState(false);
 
     const HandlePopupSkill = () => {
       setViewAllSkills((prev) => prev = !prev)

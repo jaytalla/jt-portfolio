@@ -160,7 +160,7 @@ const VideoCard = ({title, video}) => {
 
 const Projects = ({theme}) => {
     
-  const [otherProjects, setOtherProjects] = useState(true);
+  const [otherProjects, setOtherProjects] = useState(false);
 
   const HandlePopup = () => {
     setOtherProjects((prev) => prev = !prev)
