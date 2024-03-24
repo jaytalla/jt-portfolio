@@ -125,7 +125,7 @@ const Skillcard = ({imgName, skillname, percentage, desc}) => {
   return (
     <div className='flex flex-col w-full h-fit duration-200 hover:bg-jt-primary-light dark:hover:bg-jt-dark-primary-neutral even:bg-jt-primary-dark even:bg-opacity-10 p-5'>
       <div className='flex w-full items-center'>
-        <img src={imgName != null ? imgName : HomeImage} alt={imgName} className='w-[40px] h-[40px]
+        <img src={imgName != null ? imgName : HomeImage} alt={imgName} className='w-[40px] h-[40px] grayscale dark:grayscale-0
                                                                         md:w-[80px] md:h-[80px] md:min-w-[80px]' />
         
         {/* PERCENTAGE */}
@@ -153,7 +153,7 @@ const Skillcard = ({imgName, skillname, percentage, desc}) => {
 
 const About = ({theme}) => {
 
-    const [viewAllSkills, setViewAllSkills] = useState(false);
+    const [viewAllSkills, setViewAllSkills] = useState(false  );
 
     const HandlePopupSkill = () => {
       setViewAllSkills((prev) => prev = !prev)

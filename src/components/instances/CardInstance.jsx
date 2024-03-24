@@ -14,7 +14,7 @@ export const CardWithIcon = ({imgname, percentage}) => {
     return (
         <div className='mb-5 group
                         w-fit flex flex-col md:mb-0 justify-center items-start h-full '>
-            <img className='w-[100px] h-[100px] group-hover:scale-110 duration-100 mb-5 ' src={imgname} alt={imgname} />
+            <img className='grayscale dark:grayscale-0 w-[100px] h-[100px] group-hover:scale-110 duration-100 mb-5 ' src={imgname} alt={imgname} />
             {/* PROGRESS BAR  */}
             <ProgressBar val={percentage} height={"20px"}/>
         </div>

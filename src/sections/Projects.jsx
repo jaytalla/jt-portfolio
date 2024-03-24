@@ -4,6 +4,7 @@ import { PowerGlitch } from 'powerglitch'
 import Donut from '../assets/imgs/donut.png'
 import CRUD from '../assets/imgs/crud.png'
 import WEATHER from '../assets/imgs/weather.png'
+import YT from '../assets/imgs/yt.jpg'
 import ReactPlayer from 'react-player'
 import { IoIosClose } from "react-icons/io";
 
@@ -26,6 +27,7 @@ import XDVID from '../assets/vids/xd.mp4'
 const projectList = [
   {name: "KyriexAnta Website", desc: "Website focusing on frontend.", link: "https://jaytalla.site/iprojects/kyrie-anta/index.html", img: ProjKyrie},
   {name: "Donut Website", desc: "Website focusing on frontend.", link: "https://jaytalla.site/iprojects/donut/index.html", img: Donut},
+  {name: "Youtube Clone", desc: "First Website focusing on API.", link: "https://jaytalla.site/iprojects/YoutubeClone/index.html", img: YT},
   {name: "Weather Website", desc: "Website focusing on API.", link: "https://jaytalla.site/iprojects/weather-app/index.html", img: WEATHER},
   {name: "CRUD Site", desc: "Website focusing on backend.", link: "https://jaytalla.site/iprojects/crud/index.html", img: CRUD},
 ]
@@ -55,7 +57,8 @@ const ProjectCard = ({title, img, desc, link}) => {
                         md:h-[250px] justify-around
                         dark:border-jt-txt-neon-green border-t-2
                         hover:scale-105 duration-200 ease-out'>
-            <img className='w-full h-[200px]
+            <img className='w-full h-[200px] grayscale
+                            dark:grayscale-0
                             md:h-[50%] object-cover' src={img} alt="" />
             <div className='flex p-2 pb-5 flex-col w-full h-[70%] bg-white justify-center items-center 
                             md:p-4 text-center
@@ -148,7 +151,7 @@ const VideoCard = ({title, video}) => {
 
   return (
     <div className='flex flex-col justify-center items-center w-[250px] h-[150px] p-5'>
-        <h4>{title}</h4>
+        <h5>{title}</h5>
         <video ref={videoRef} controlsList='noremoteplayback nodownload nodisplay' controls width={"100%"} height={150} autoPlay={hovered} onMouseOver={togglePlay} onMouseLeave={togglePlay} loop muted className="cursor-pointer w-full h-full object-cover">
             <source src={video} type="video/mp4"/>
             Your browser does not support the video tag.  
@@ -173,7 +176,7 @@ const Projects = ({theme}) => {
                         align-middle'>
         <h2 className='pb-0 m-0 mb-5'>Projects</h2>
         {/* PROJECT CONTAINER  */}
-        <div className='w-full h-full px-10 mb-10
+        <div className='w-full h-full px-10 mb-32
                         md:px-0'>
             {/* SHOW DESCRIPTIONS FOR THE WEBSITE WHEN CLICKED  */}
             <div></div>
@@ -183,15 +186,7 @@ const Projects = ({theme}) => {
                             md:dark:gap-y-10 
                             md:grid-cols-3 gap-x-5 md:gap-y-16 w-full h-full 
                             lg:grid-cols-4'>
-                {/* PROJECT CARD  */}
-                {/* <ProjectCard link={"https://jaytalla.site/iprojects/crud/index.html"} title={"Kyrie x Anta"}/>
-                <ProjectCard link={"https://jaytalla.site/iprojects/crud/index.html"} title={"Kyrie x Anta"}/>
-                <ProjectCard link={"https://jaytalla.site/iprojects/crud/index.html"} title={"Kyrie x Anta"}/>
-                <ProjectCard link={"https://jaytalla.site/iprojects/crud/index.html"} title={"Kyrie x Anta"}/>
-                <ProjectCard link={"https://jaytalla.site/iprojects/crud/index.html"} title={"Kyrie x Anta"}/>
-                <ProjectCard link={"https://jaytalla.site/iprojects/crud/index.html"} title={"Kyrie x Anta"}/>
-                <ProjectCard link={"https://jaytalla.site/iprojects/crud/index.html"} title={"Kyrie x Anta"}/>
-                <ProjectCard link={"https://jaytalla.site/iprojects/crud/index.html"} title={"Kyrie x Anta"}/> */}
+           
                 {
                   projectList.map((project) => {
                     return <ProjectCard link={project.link} title={project.name} desc={project.desc} img={project.img}/>

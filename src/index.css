@@ -108,7 +108,9 @@
     }
 
 
-
+    .txtbox {
+        @apply w-full p-5
+    }
 
     
 }
